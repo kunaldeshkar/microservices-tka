@@ -1,4 +1,4 @@
-package com.tka.studentservice.models;
+package com.tka.instituteservice.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,13 +13,11 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "student")
-public class Student {
+@Entity
+public class Institute {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String firstname;
-    private String lastname;
+    private String name;
     private String email;
-    private Integer instituteId;
 }

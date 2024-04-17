@@ -20,7 +20,7 @@ public class StudentServiceImpl implements StudentService {
         return studentRepository.save(student);
     }
 
-    public List<Student> findStudentsBySchool(Integer schoolId) {
-        return studentRepository.findAllBySchoolId(schoolId);
+    public List<Student> findStudentsByInstitute(Integer instituteId) {
+        return studentRepository.findAllByInstituteId(instituteId);
     }
 }

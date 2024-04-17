@@ -23,8 +23,8 @@ public class StudentController {
     }
 
     // Find Students By School
-    @GetMapping("/school/{schoolId}")
-    public ResponseEntity<List<Student>> findStudentsBySchool(@PathVariable("schoolId") Integer schoolId) {
-        return ResponseEntity.ok(studentService.findStudentsBySchool(schoolId));
+    @GetMapping("/school/{instituteId}")
+    public ResponseEntity<List<Student>> findStudentsByInstitute(@PathVariable("instituteId") Integer instituteId) {
+        return ResponseEntity.ok(studentService.findStudentsByInstitute(instituteId));
     }
 }

@@ -7,5 +7,5 @@ import java.util.List;
 public interface StudentService {
     Student createStudent(Student student);
 
-    List<Student> findStudentsBySchool(Integer schoolId);
+    List<Student> findStudentsByInstitute(Integer instituteId);
 }
